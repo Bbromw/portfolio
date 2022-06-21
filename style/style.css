@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1vw;
+}
+html body {
+  font-family: "Inter", sans-serif;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+html body section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 7.7em;
+}
+html body section h2 {
+  font-size: 6.4rem;
+  color: #000000;
+  margin-bottom: 0.5em;
+}
+html body section p {
+  font-size: 4.8rem;
+  color: #000000;
+}
+html body section:last-child {
+  padding-bottom: 7.7em;
+}
+
+/*# sourceMappingURL=style.css.map */
