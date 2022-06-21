@@ -1,3 +1,98 @@
+span {
+  display: inline-block;
+  transition: 0.7s;
+}
+
+@keyframes text {
+  0% {
+    transform: translateY(-10vh);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.rains {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 0;
+}
+
+.rain {
+  animation: rain 5s ease-in-out infinite;
+  transition: all 1s;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transform: rotate(10deg);
+  background-image: linear-gradient(to right, rgba(139, 214, 241, 0.925), white);
+}
+
+.rain:nth-child(1) {
+  animation-delay: 1s;
+}
+
+.rain:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.rain:nth-child(3) {
+  animation-delay: 2s;
+}
+
+.rain:nth-child(4) {
+  animation-delay: 3s;
+}
+
+.rain:nth-child(5) {
+  animation-delay: 4s;
+}
+
+.rain:nth-child(6) {
+  animation-delay: 1s;
+}
+
+.rain:nth-child(7) {
+  animation-delay: 1.5s;
+}
+
+.fade {
+  animation-name: scaling;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+.scaling {
+  animation-name: text;
+  animation-fill-mode: forwards;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes rain {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 1;
+  }
+}
+@keyframes scaling {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-7px);
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -29,6 +124,7 @@ html body section h2 {
 html body section p {
   font-size: 4.8rem;
   color: #000000;
+  transform: skewX(-10deg);
 }
 
 /*# sourceMappingURL=style.css.map */
